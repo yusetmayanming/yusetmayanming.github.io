@@ -9,10 +9,11 @@
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(event) {
    let response = await fetch("https://yusetmayanming.github.io");
-
+	  
+     
    if (response.ok) { // if HTTP-status is 200-299
    // get the response body (the method explained below)
-     alert(respose);
+     alert(response);
    let json = await response.json();
    } else {
     alert("HTTP-Error: " + response.status);
