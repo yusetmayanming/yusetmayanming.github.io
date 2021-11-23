@@ -6,11 +6,11 @@
 </style>
 </head>
 <body style="background:white">
-<script>
-const http = new XMLHttpRequest()
-http.open("GET", "https://yusetmayanming.github.io?name")
-http.send()
-http.onload = () => alert(http.responseText)
+<script type=“text/javascript”> 
+   
+ let p = fetch('https://yusetmayanming.github.io?' + new URLSearchParams({
+    name: 'value',
+  }));
 </script>
 </body>	
 </html>
