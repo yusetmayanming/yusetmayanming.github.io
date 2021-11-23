@@ -8,8 +8,9 @@
 <body style="background:white" onload="alert(get_values())">
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(event) {
+     alert("hello");  
    let response = await fetch("https://yusetmayanming.github.io");
-   alert("hello");  
+  
    alert(response);
 
    if (response.ok) { // if HTTP-status is 200-299
